@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ฟอร์มสมัครสมาชิก</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .gender-group,
+    .interest-group {
+      margin-top: 10px;
+    }
+
+    .gender-group label,
+    .interest-group label {
+      display: inline;
+      font-weight: normal;
+      margin-right: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <form action="process_form.php" method="post" enctype="multipart/form-data">
+    <h2>สมัครสมาชิก</h2>
+
+    <label for="username">ชื่อผู้ใช้:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">อีเมล:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">รหัสผ่าน:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="dob">วันเกิด:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label>เพศ:</label>
+    <div class="gender-group">
+      <input type="radio" id="male" name="gender" value="ชาย">
+      <label for="male">ชาย</label>
+      <input type="radio" id="female" name="gender" value="หญิง">
+      <label for="female">หญิง</label>
+    </div>
+
+    <label for="phone">เบอร์โทรศัพท์:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <label for="education">ระดับการศึกษา:</label>
+    <select id="education" name="education">
+      <option value="">-- กรุณาเลือก --</option>
+      <option value="ประถมศึกษา">ประถมศึกษา</option>
+      <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+      <option value="ปวช.">ปวช.</option>
+      <option value="ปวส.">ปวส.</option>
+      <option value="ปริญญาตรี">ปริญญาตรี</option>
+      <option value="อื่น ๆ">อื่น ๆ</option>
+    </select>
+
+    <label>ความสนใจ:</label>
+    <div class="interest-group">
+      <input type="checkbox" id="coding" name="interest[]" value="การเขียนโปรแกรม">
+      <label for="coding">การเขียนโปรแกรม</label>
+      <input type="checkbox" id="design" name="interest[]" value="การออกแบบ">
+      <label for="design">การออกแบบ</label>
+      <input type="checkbox" id="game" name="interest[]" value="เกม">
+      <label for="game">เกม</label>
+    </div>
+
+    <label for="age">อายุ:</label>
+    <input type="number" id="age" name="age" min="0" max="100">
+
+    <label for="profile">อัปโหลดรูปโปรไฟล์:</label>
+    <input type="file" id="profile" name="profile">
+
+    <button type="submit">สมัครสมาชิก</button>
+  </form>
+</div>
+
+</body>
+</html>
+apps-fileview.texmex_20250619.00_p0
+work_form_03.html
+กำลังแสดง work_form_08.html
