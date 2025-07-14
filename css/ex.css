@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+}
+
+h2{
+    color: red;
+}
+
+#xxx{
+   border: 11px dotted red;
+}
+
+input[type="text"]{
+    color: blueviolet;
+    font-weight: bold;
+}
+
+input[type="password"]{
+    color: aquamarine;
+    font-weight: bold;
+}
+
+input[type="submit"]{
+    color: blueviolet;
+    font-weight: bold;
+}
